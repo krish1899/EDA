@@ -1,2 +1,2 @@
 matplotlib == 3.4.3
-seaborne == 0.12
+seaborn == 0.12
