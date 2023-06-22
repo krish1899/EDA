@@ -176,7 +176,7 @@ def main():
                 all_cs = df.columns.to_list()
                 selected_cs = st.multiselect("Select Columns", all_cs)
                 fig1 = plt.figure()
-                df[selected_cs].value_counts().plot(kind="bar", color=user_colour)
+                df[selected_cs].value_counts().plot(kind="hist", color=user_colour)
                 st.pyplot(fig1)
             if st.checkbox("lineplot", key=4):
                 st.header('Streamlit Colour Picker for Charts')
